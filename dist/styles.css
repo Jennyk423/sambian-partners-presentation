@@ -340,6 +340,17 @@ em { color: var(--primary); font-style: normal; }
 .editorial-grid { margin-top: 22px; display: grid; grid-template-columns: 1.25fr .75fr; gap: 52px; align-items: center; }
 .editorial-grid h2 { font-size: clamp(45px, 5.2vw, 72px); line-height: 1.08; }
 .editorial-lead { margin-top: 22px; max-width: 720px; color: var(--muted); font-size: 18px; line-height: 1.65; }
+.nokia-visuals {
+  height: clamp(140px, 19vh, 210px); margin-top: 20px;
+  display: grid; grid-template-columns: 1.35fr .65fr; gap: 14px;
+}
+.nokia-visuals figure {
+  position: relative; min-width: 0; margin: 0; overflow: hidden;
+  background: white; border: 1px solid var(--border);
+}
+.nokia-visuals img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; }
+.nokia-device img { padding: 5px 12px; }
+.nokia-brand img { padding: 24px; }
 .editorial-notes { display: grid; gap: 12px; }
 .editorial-notes > div { padding: 16px; border-left: 3px solid var(--primary); background: white; }
 .editorial-notes dt { color: var(--primary); font-size: 10px; font-weight: 900; }
@@ -832,6 +843,8 @@ button:focus-visible, a:focus-visible { outline: 3px solid rgba(79,99,217,.35); 
   .editorial-grid { margin-top: 14px; gap: 30px; }
   .editorial-grid h2 { font-size: clamp(40px, 4.5vw, 60px); }
   .editorial-lead { margin-top: 12px; font-size: 15px; line-height: 1.5; }
+  .nokia-visuals { height: 145px; margin-top: 12px; gap: 10px; }
+  .nokia-brand img { padding: 18px; }
   .editorial-notes { gap: 7px; }
   .editorial-notes > div { padding: 10px 12px; }
   .editorial-notes dd { font-size: 12px; line-height: 1.4; }
@@ -1014,6 +1027,7 @@ button:focus-visible, a:focus-visible { outline: 3px solid rgba(79,99,217,.35); 
   .timeline-event { display: block; }
   .split-ledger, .parallel-grid, .solution-quadrants, .process-compare, .career-columns, .before-after, .ai-workspace, .ai-judgment-grid, .ai-final-row { grid-template-columns: 1fr; }
   .fit-comparison, .voice-cases, .editorial-grid, .collab-evidence, .career-diagnosis, .career-benchmark, .fairness-compare { grid-template-columns: 1fr; }
+  .nokia-visuals { height: 180px; }
   .fit-shift { padding: 12px 0; }
   .fit-shift i { transform: rotate(90deg); }
   .ob-process { display: grid; grid-template-columns: 1fr; gap: 5px; }
