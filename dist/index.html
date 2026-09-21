@@ -13,17 +13,7 @@
   <a class="skip-link" href="#chapter-00">본문으로 이동</a>
 
   <header class="topbar" aria-label="발표 도구">
-    <div class="brand">
-      <span class="brand-mark" aria-hidden="true">SP</span>
-      <span class="brand-copy"><strong>조직행위이해</strong><small>Sambian Partners</small></span>
-    </div>
-    <div class="progress-wrap" aria-label="발표 진행률">
-      <span id="scene-count">01 / 15</span>
-      <span class="progress-track"><span id="progress-bar"></span></span>
-    </div>
     <div class="present-controls">
-      <button class="icon-button" id="prev-slide" type="button" title="이전 장면" aria-label="이전 장면">&#8593;</button>
-      <button class="icon-button" id="next-slide" type="button" title="다음 장면" aria-label="다음 장면">&#8595;</button>
       <button class="icon-button" id="fullscreen" type="button" title="전체 화면" aria-label="전체 화면">&#x26F6;</button>
     </div>
   </header>
@@ -74,7 +64,7 @@
           <div class="chain-line is-broken" aria-hidden="true"></div>
           <div class="chain-item final reveal"><span>?</span><strong>RETENTION PROBLEM?</strong><small>정말 ‘붙잡기’의 문제일까?</small></div>
         </div>
-        <blockquote class="big-question reveal">“이 사건은 단순한 인재유출 문제였을까?”</blockquote>
+        <blockquote class="big-question manual-stage" data-stage="1" aria-hidden="true">“이 사건은 단순한 인재유출 문제였을까?”</blockquote>
       </div>
     </section>
 
@@ -106,57 +96,127 @@
       </div>
     </section>
 
-    <section class="scene" id="chapter-02" data-chapter="02" aria-labelledby="system-title">
-      <div class="scene-inner">
-        <div class="section-head reveal">
-          <p class="scene-number">02 · WHAT IS REALLY WRONG?</p>
-          <h2 id="system-title">Sambian은 정말<br>‘나쁜 회사’였을까?</h2>
-        </div>
-        <div class="equation reveal" aria-label="가치와 조직체계는 같지 않다"><span>좋은 가치</span><b>&ne;</b><span>작동하는 조직체계</span></div>
-        <div class="split-ledger">
-          <article class="ledger good reveal"><p class="kicker">Sambian이 잘했던 것</p><h3>사람을 빠르게 성장시켰다</h3><ul><li>젊은 인재에게 빠르게 큰 기회 제공</li><li>창의성과 혁신 장려</li><li>능력 있는 직원에게 높은 자율성</li><li>초기 경력자가 빠르게 이름을 알릴 기회</li><li>Peter의 창업철학은 실제 회사 성장에 기여</li></ul></article>
-          <article class="ledger gap reveal"><p class="kicker">성장하며 부족해진 것</p><h3>성장한 사람의 다음을 설계하지 못했다</h3><ul><li>명확한 성장경로와 승계계획</li><li>설계–엔지니어링–영업 간 협업</li><li>직원 의견이 행동으로 이어지는 구조</li><li>관리자의 사람관리 역량</li><li>혁신을 고객가치와 수주성과로 연결하는 과정</li></ul></article>
-        </div>
-        <aside class="evidence analysis reveal"><span>[분석적 해석]</span><p>Sambian에는 강한 가치가 있었다. 문제는 그 가치를 실제 성과, 구성원의 성장, 직원 의견, 부서 간 협업으로 연결하는 조직체계가 충분히 성숙하지 않았다는 것이다.</p></aside>
-      </div>
-    </section>
-
-    <section class="scene tension-scene" data-chapter="02" aria-labelledby="tension-title">
+    <section class="scene org-growth-scene" id="chapter-02" data-chapter="02" aria-labelledby="system-title">
       <div class="scene-inner compact">
-        <p class="scene-number reveal">02 · THE ORGANIZATIONAL CONTRADICTION</p>
-        <h2 id="tension-title" class="reveal">“아래 구성원에게는 계속 혁신을 요구하면서,<br><em>상층부의 사람과 조직구조는 충분히 변화하고 있었을까?</em>”</h2>
-        <div class="tension-grid">
-          <div class="tension-column reveal"><span>초기 Sambian</span><strong>기회</strong><strong>자율성</strong><strong>빠른 성장</strong><strong>창의성</strong></div>
-          <div class="growth-arrow reveal" aria-hidden="true"><span>인재의 성장</span>&#8594;</div>
-          <div class="tension-column mature reveal"><span>성장한 Tom에게 필요했을 것</span><strong>더 큰 영향력</strong><strong>명확한 다음 단계</strong><strong>체계적 지원</strong><strong>부서 간 통합</strong></div>
+        <div class="section-head org-growth-heading reveal">
+          <p class="scene-number">02 · ORGANIZATIONAL GROWTH</p>
+          <h2 id="system-title">회사는 성장했는데,<br>조직을 운영하는 방식도 함께 성장했을까?</h2>
+          <p>초기 성공을 만든 방식과, 성장한 조직을 운영하는 체계는 같지 않다.</p>
         </div>
-        <div class="micro-contrast reveal"><span>충성도</span><b>&ne;</b><span>현재 직무에 필요한 역량</span></div>
-        <aside class="takeaway reveal"><span>핵심 진단</span><p>Sambian은 인재를 키우는 회사에는 성공했지만, 성장한 인재가 계속 성장하고 싶어지는 회사로는 충분히 진화하지 못했다.</p></aside>
+        <div class="org-growth-grid">
+          <article class="org-growth-card origin reveal">
+            <span>초기 Sambian의 성공공식</span>
+            <ul>
+              <li>젊은 인재에게 빠른 기회</li>
+              <li>높은 자율성</li>
+              <li>창의성과 혁신 강조</li>
+              <li>빠른 책임과 성취 경험</li>
+            </ul>
+          </article>
+          <div class="org-growth-arrow reveal" aria-label="조직의 성장">
+            <span>조직의 성장</span><b>→</b>
+          </div>
+          <article class="org-growth-card system reveal">
+            <span>성장한 조직에 추가로 필요해진 조직체계</span>
+            <ul>
+              <li>명확한 역할·경력구조</li>
+              <li>부서 간 조율체계</li>
+              <li>관리자 사람관리 역량</li>
+              <li>직원 의견의 상향 전달과 후속조치</li>
+            </ul>
+          </article>
+        </div>
+        <div class="org-contrast reveal"><span>충성도</span><b>&ne;</b><span>현재 직무에 필요한 역량</span></div>
+        <aside class="org-diagnosis reveal"><span>핵심 진단</span><p>Sambian의 초기 성공공식은 잘못된 것이 아니었다.<br><strong>다만 조직의 성장과 함께 관리체계까지 충분히 진화하지 못했다.</strong></p></aside>
+        <p class="org-level-bridge reveal"><span>02 · 조직 수준의 원인</span><b>→</b><span>03-1 · 그 원인이 Tom 개인에게 나타난 결과</span></p>
       </div>
     </section>
 
-    <section class="scene diagnosis-scene" id="chapter-03" data-chapter="03" aria-labelledby="diagnosis-title">
-      <div class="scene-inner">
-        <div class="section-head reveal"><p class="scene-number">03 · OB DIAGNOSIS</p><h2 id="diagnosis-title">현재 시점에서 다시 본 Sambian</h2><p>이론을 먼저 나열하지 않고, 사례에 나타난 현상에서 출발한다.</p></div>
-        <div class="diagnosis-grid">
-          <article class="diagnosis-card reveal"><span>01 · 개인–조직 적합성</span><h3>좋은 적합성도 영원하지 않다</h3><div class="change-row"><p><b>초기</b> 빠른 기회 · 자율성 · 창의적 프로젝트 · 인정</p><p><b>8년 뒤</b> 더 큰 영향력 · 다음 직위 · 체계적 지원</p></div><p class="analysis-line">Tom이 갑자기 Sambian과 맞지 않게 된 것이 아니라, Tom이 성장하면서 조직에 기대하는 것도 달라졌을 수 있다.</p></article>
-          <article class="diagnosis-card voice-card reveal"><span>02 · 직원 의견제시(Employee Voice)</span><h3>“말할 수 있는가?”보다<br>“말하면 달라지는가?”</h3><div class="voice-flow"><b>의견제시</b><i></i><b>경청</b><i class="broken"></i><b>조치</b><i class="broken"></i><b>결과 공유</b></div><p>Adrienne은 “아무도 듣지 않는다”고 느꼈고, Tom은 퇴사 면담에서 진짜 생각을 충분히 말하지 않았다.</p></article>
-          <article class="diagnosis-card reveal"><span>03 · 부서 간 협업</span><h3>개인의 역량은 높았지만,<br>조직의 통합 역량은 약했다</h3><div class="handoff-flow"><b>설계</b><i></i><b>Engineering</b><i class="broken"></i><b>영업</b><i></i><b>고객</b></div><p>Marko의 핵심은 한 사람의 발표능력이 아니라, 세 부서가 고객가치·실현 가능성·수주전략을 초기에 함께 조율하지 못한 구조다.</p></article>
-          <article class="diagnosis-card reveal"><span>04 · 경력 병목</span><h3>열심히 하면 어디까지 갈 수 있는가?</h3><div class="career-rise"><p><b>초기 경력</b><span>빠른 성장</span></p><p><b>중간 경력</b><span>정체</span></p></div><p>고성과자에게도 다음 직위가 불명확하다면 노력과 미래보상의 연결이 약해진다.</p></article>
-          <article class="diagnosis-card reveal"><span>05 · 절차적 공정성</span><h3>떠날 것 같은 사람이 더 빨리 승진한다면?</h3><div class="versus"><p>단기적 인재 유지</p><b>VS</b><p>장기적 공정성</p></div><p>이탈 가능성만으로 승진이 빨라지면 “남아 있는 사람이 오히려 손해”라는 인식이 생길 수 있다.</p></article>
+    <section class="scene ob-scene ob-intro" id="chapter-03" data-chapter="03" aria-labelledby="diagnosis-title">
+      <div class="scene-inner compact">
+        <div class="ob-heading reveal"><p class="scene-number">03 · 조직행위 분석</p><h2 id="diagnosis-title">여러 조직문제가<br>동시에 나타나고 있었다.</h2><p>Tom의 퇴사를 하나의 원인으로 설명하기보다, 먼저 Sambian에서 실제로 어떤 문제가 반복되고 있었는지를 본다.</p></div>
+        <div class="ob-problem-grid reveal" aria-label="Sambian의 네 가지 실제 조직문제">
+          <article><span>01</span><h3>불명확한 경력경로</h3><p>초기에는 빠르게 성장하지만, 고성과자가 일정 단계에 도달한 뒤 다음 역할과 성장방향이 명확하지 않다.</p></article>
+          <article><span>02</span><h3>직원 의견이 행동으로<br>이어지지 않는 구조</h3><p>문제를 제기해도 경청 → 후속조치 → 결과 공유로 이어지는 과정이 약하다.</p></article>
+          <article><span>03</span><h3>부서 간 협업 부족</h3><p>설계–엔지니어링–영업이 프로젝트 초기부터 같은 목표와 고객가치를 조율하는 구조가 약하다.</p></article>
+          <article><span>04</span><h3>관리자의 사람관리 한계</h3><p>업무성과는 알지만 상태·경력목표·불만·이탈 신호까지 충분히 파악하고 대응하지 못한다.</p></article>
         </div>
-        <aside class="takeaway reveal"><span>SECTION TAKEAWAY</span><p>문제는 보상 하나가 아니라, 사람·부서·경력·의사소통을 연결하는 조직체계의 부족이었다.</p></aside>
+        <aside class="ob-lens-strip reveal" aria-label="조직문제를 설명하는 조직행위 관점">
+          <div><span>조직행위 관점</span><strong>이 현상을 어떻게 설명할 수 있는가?</strong></div>
+          <p><b>개인–조직 적합성(P–O Fit)</b><b>직원 의견제시(Employee Voice)</b><b>부서 간 협업</b></p>
+          <small>P–O Fit은 성장한 Tom의 기대와 Sambian이 제공하는 환경 사이의 적합성이 어떻게 달라졌는지를 설명하는 관점이다.</small>
+        </aside>
+        <p class="scene-transition reveal">먼저, Tom의 이탈을 개인–조직 적합성의 변화로 해석해본다. <b>→</b></p>
       </div>
     </section>
 
-    <section class="scene evidence-scene" data-chapter="03" aria-labelledby="parallel-title">
+    <section class="scene ob-scene fit-scene" data-chapter="03" aria-labelledby="fit-title">
       <div class="scene-inner">
-        <div class="section-head reveal"><p class="scene-number">03 · EVIDENCE, NOT ANALOGY</p><h2 id="parallel-title">현실의 조직에서도<br>비슷한 신호는 나타난다</h2><p>동일한 사례가 아니라, 조직행위 메커니즘을 보완하는 비교다.</p></div>
-        <div class="parallel-grid">
-          <article class="parallel-card medium reveal"><span class="parallel-label">REAL-WORLD PARALLEL</span><h3>Nokia</h3><p class="card-subtitle">불편한 정보가 위로 올라가지 않을 때</p><dl><dt>WHAT HAPPENED</dt><dd>경영진과 중간관리자 사이의 두려움과 정서적 압력이 부정적 정보의 상향 전달을 왜곡한 현상이 분석되었다.</dd><dt>WHY IT MATTERS</dt><dd>의견이 존재하는 것만으로는 부족하다. 의사결정권자에게 도달하고 행동으로 연결되어야 한다.</dd><dt>LIMIT</dt><dd>산업과 조직상황은 다르며, 정보전달 실패 측면에서만 비교한다.</dd><dt>SOURCE</dt><dd>Vuori &amp; Huy (2016), Administrative Science Quarterly</dd></dl></article>
-          <article class="parallel-card small reveal"><span class="parallel-label">CONCEPTUAL PARALLEL</span><h3>Yahoo</h3><p class="card-subtitle">뛰어난 인재가 있어도 조직 정렬이 약해질 수 있다</p><dl><dt>WHAT HAPPENED</dt><dd>성장과 복잡성 속에서 관료화, 내부 의사결정, 제품 추진을 위한 조직적 정렬 문제가 지적되었다.</dd><dt>WHY IT MATTERS</dt><dd>아이디어를 자원·부서 협력·시장 실행으로 연결하는 역량이 필요하다.</dd><dt>LIMIT</dt><dd>Sambian과 동일 사례가 아니며 조직적 실행능력의 간극만 비교한다.</dd></dl></article>
-          <article class="parallel-card primary reveal"><span class="parallel-label">REAL-WORLD BENCHMARK</span><h3>Professional Services Firms</h3><p class="card-subtitle">고위 경력의 목적지는 하나일 필요가 없다</p><p>관리직이나 전통적 지분 파트너만이 유일한 고위 경력경로는 아니다. 전문성을 중심으로 하는 고위 역할과 여러 형태의 파트너 직위가 실제 존재한다.</p><div class="benchmark-pills"><span>McKinsey · Expert Partner</span><span>KPMG UK · Equity / Non-Equity Partner</span></div><blockquote>전문성 그 자체가 고위 경력이 될 수 있다면, 성장도 반드시 관리직 승진만을 의미할 필요는 없다.</blockquote><small>직위의 존재를 보여주는 벤치마크이며, 해당 제도가 승진 병목 해결 목적으로 만들어졌다고 단정하지 않는다.</small></article>
+        <div class="ob-heading reveal"><p class="scene-number">03-1 · 분석 관점 ①</p><span class="ob-topic ob-concept-badge">개인–조직 적합성(P–O Fit)</span><h2 id="fit-title">좋은 적합성도<br>영원하지 않다.</h2></div>
+        <div class="fit-comparison reveal">
+          <article><span>초기의 Tom</span><ul><li>빠른 기회</li><li>높은 자율성</li><li>창의적인 프로젝트</li><li>빠른 인정</li></ul><p>초기 Sambian과 높은 적합성</p></article>
+          <div class="fit-shift" aria-label="성장에 따른 기대 변화"><b>성장</b><i>→</i><strong>기대 변화</strong></div>
+          <article><span>8년 후의 Tom</span><ul><li>더 큰 영향력</li><li>명확한 다음 단계</li><li>체계적 지원</li><li>경력의 가시성</li></ul><p>성장하면서 중요하게 느끼는 요소도 변화</p></article>
         </div>
+        <aside class="ob-interpretation fit-interpretation reveal"><span>[분석적 해석]</span><p>Tom이 갑자기 Sambian과 맞지 않게 된 것이 아니라, Tom이 성장하면서 조직에 기대하는 것도 달라졌고, <strong>Sambian의 경력·지원·협업체계가 그 변화된 기대를 충분히 따라가지 못하면서 개인–조직 적합성이 낮아졌다고 해석할 수 있다.</strong></p></aside>
+        <p class="fit-takeaway reveal">문제는 Tom이 변했다는 사실 자체가 아니라, <strong>조직이 성장한 인재의 변화된 기대를 충분히 따라가지 못했다는 데 있다.</strong></p>
+        <p class="scene-transition reveal">그런데 문제를 느낀 직원들은 그 생각을 조직 안에서 제대로 전달할 수 있었을까? <b>→</b></p>
+      </div>
+    </section>
+
+    <section class="scene ob-scene voice-scene" data-chapter="03" aria-labelledby="voice-title">
+      <div class="scene-inner">
+        <div class="ob-heading reveal"><p class="scene-number">03-2 · 분석 관점 ②</p><span class="ob-topic ob-concept-badge">직원 의견제시(Employee Voice)</span><p class="ob-actual-problem">실제 조직문제 · 직원 의견이 행동으로 이어지지 않는 구조</p><h2 id="voice-title">“말할 수 있는가?”보다<br>“말하면 달라지는가?”</h2></div>
+        <div class="ob-process voice-process reveal" aria-label="직원 의견제시 과정"><b>의견제시</b><i></i><b>경청</b><i class="broken"></i><b>조치</b><i class="broken"></i><b>결과 공유</b></div>
+        <div class="voice-cases reveal"><blockquote><span>Adrienne</span>“윗선에 이야기했지만<br>아무도 듣지 않는다고 느낌”</blockquote><p>의견을 낼 수 있는 것과<br><strong>의견이 실제 변화로 이어지는 것은 다르다.</strong></p><blockquote><span>Tom</span>“퇴사 면담에서도<br>속내를 충분히 말하지 않음”</blockquote></div>
+        <p class="scene-transition reveal">문제를 말하는 것만 어려웠던 것이 아니다. 좋은 아이디어를 실제 성과로 연결하는 과정도 끊겨 있었다. <b>↓</b></p>
+      </div>
+    </section>
+
+    <section class="scene ob-scene evidence-editorial nokia-scene" data-chapter="03" aria-labelledby="nokia-title">
+      <div class="scene-inner compact">
+        <div class="editorial-label reveal">REAL-WORLD PARALLEL · NOKIA</div>
+        <div class="editorial-grid">
+          <div class="reveal"><h2 id="nokia-title">불편한 정보가<br>위로 올라가지 않을 때</h2><p class="editorial-lead">Nokia의 스마트폰 전환기를 분석한 연구에서는 부정적 정보가 상향 전달되는 과정에서 왜곡되면서 경영진의 현실 인식에도 문제가 생긴 것으로 분석되었다.</p></div>
+          <dl class="editorial-notes reveal"><div><dt>WHY IT MATTERS</dt><dd>직원 의견은 존재하는 것보다 의사결정과 행동으로 연결되는 것이 중요하다.</dd></div><div><dt>LIMIT</dt><dd>Sambian과 산업·상황은 다르며, 정보의 상향 전달이라는 측면에서만 비교한다.</dd></div><div><dt>SOURCE</dt><dd>Vuori &amp; Huy (2016)</dd></div></dl>
+        </div>
+        <p class="scene-transition reveal">다음은 좋은 아이디어가 성과로 전환되는 과정이다. <b>→</b></p>
+      </div>
+    </section>
+
+    <section class="scene ob-scene collab-diagnosis" data-chapter="03" aria-labelledby="collab-diagnosis-title">
+      <div class="scene-inner">
+        <div class="ob-heading reveal"><p class="scene-number">03-3 · 03</p><span class="ob-topic">부서 간 협업</span><h2 id="collab-diagnosis-title">개인의 역량은 높았지만,<br>조직의 통합 역량은 약했다.</h2></div>
+        <div class="ob-process collab-process reveal" aria-label="Marko 프로젝트 가치 전달 과정"><div><b>설계</b><small>혁신적인 결과물</small></div><i></i><div><b>Engineering</b><small>실현 가능성</small></div><i class="broken"></i><div><b>영업</b><small>고객 설득과 수주</small></div><i></i><div><b>고객</b><small>실제 구매가치</small></div></div>
+        <div class="collab-evidence reveal"><blockquote><b>Savannah</b>설계와 가격 자체는 문제가 아니었다고 봄</blockquote><blockquote><b>Adrienne</b>좋은 아이디어가 결과로 이어지도록 돕는 지원구조가 약하다고 느낌</blockquote><p>Paul 한 사람의 발표능력 문제가 아니라, 부서들이 프로젝트 초기부터 같은 고객가치를 정의하는 구조가 부족했다.</p></div>
+        <aside class="yahoo-strip reveal"><span>REAL-WORLD PARALLEL · Yahoo</span><p>좋은 인재와 아이디어가 있어도 조직적 정렬과 지원이 약하면 실행력이 떨어질 수 있다.</p><small>동일 사례가 아니라 개인 역량과 조직 실행력의 간극이라는 점에서만 비교.</small></aside>
+        <p class="ob-takeaway-line reveal">좋은 아이디어를 만드는 것과 <em>좋은 아이디어를 조직적으로 실현하는 것은 다르다.</em></p>
+        <p class="scene-transition reveal">성과가 좋더라도, 그 다음 경력이 보이지 않는다면 직원은 왜 계속 남아 있어야 할까? <b>→</b></p>
+      </div>
+    </section>
+
+    <section class="scene ob-scene bottleneck-scene" data-chapter="03" aria-labelledby="bottleneck-title">
+      <div class="scene-inner">
+        <div class="ob-heading reveal"><p class="scene-number">03-4 · 04</p><span class="ob-topic">경력 병목</span><h2 id="bottleneck-title">열심히 하면 어디까지 갈 수 있는가?</h2></div>
+        <div class="career-curve reveal"><div><span>초기 경력</span><b>빠른 성장</b><i>↗</i></div><div class="manual-stage" data-stage="1" aria-hidden="true"><span>중간 경력</span><b>정체</b><i>→</i></div></div>
+        <div class="career-diagnosis reveal"><article><span>Sambian의 강점</span><p>빠른 책임 부여</p><p>많은 프로젝트 경험</p><p>빠른 성장</p></article><blockquote class="manual-stage" data-stage="1" aria-hidden="true">“더 잘하면<br><em>무엇이 달라지는가?</em>”<small>Hal · “Where’s the career path?”<br>다음 경력은 어디에 있는가?</small></blockquote><article class="manual-stage" data-stage="1" aria-hidden="true"><span>성장 이후 보이는 문제</span><p>상위직급 이동 적음</p><p>상위직급에 자리 집중</p><p>다음 직위와 승진 시점 불명확</p></article></div>
+        <p class="ob-summary reveal manual-stage" data-stage="1" aria-hidden="true">Sambian은 초기 경력을 빠르게 성장시키는 회사일 수 있었지만, 장기적으로 머물고 싶은 회사가 되려면 <strong>그 다음 성장구조</strong>가 필요했다.</p>
+        <p class="scene-transition reveal">앞의 네 가지와는 다른, 사후 대응의 위험이 하나 더 있다. <b>↓</b></p>
+      </div>
+    </section>
+
+    <section class="scene ob-scene fairness-scene response-risk-scene" data-chapter="03" aria-labelledby="fairness-title">
+      <div class="scene-inner compact">
+        <div class="fairness-heading-row">
+          <div class="ob-heading response-risk-heading reveal"><p class="scene-number">03-5 · 추가 위험</p><span class="response-risk-label">사후 대응의 부작용</span><span class="ob-topic">절차적 공정성</span><h2 id="fairness-title">문제를 해결하려다<br>또 다른 문제를 만들 수 있다.</h2></div>
+          <p class="fairness-secondary-question reveal">떠날 것 같은 사람이<br><strong>더 빨리 승진한다면?</strong></p>
+        </div>
+        <div class="fairness-compare reveal"><article><span>단기적 인재 유지</span><p>Adrienne 이탈 가능성</p><i>↓</i><strong>Helen의 즉시 승진 제안</strong></article><b>VS</b><article><span>장기적 공정성</span><p>기존 직원</p><i>↓</i><strong>정상적인 승진 절차 대기</strong></article></div>
+        <p class="fairness-risk reveal">“이탈 가능성이 있는 사람이 더 빠르게 보상받는다는 인식이 생긴다면?”</p>
+        <blockquote class="mary-quote reveal"><span>Mary 관점</span>충성하며 남아 있던 사람에게 오히려 불리한 제도가 될 수 있다.</blockquote>
+        <aside class="fairness-analysis reveal"><span>분석</span><p>절차적 공정성은 기존 인재 이탈의 원인이라기보다, <strong>이탈 위험에 급하게 대응하는 과정에서 새롭게 발생할 수 있는 문제다.</strong></p><small>인재 유지에 대한 불안이 승진 원칙을 바꾸기 시작하면 장기적인 신뢰가 훼손될 수 있다.</small></aside>
+        <p class="fairness-takeaway reveal">잘못된 대응은 기존 문제를 해결하기보다 <strong>새로운 신뢰 문제를 만들 수 있다.</strong></p>
+        <p class="scene-transition reveal">그렇다면 이 문제를 조직 안의 사람들은 각각 어떻게 경험하고 있었을까? <b>→</b></p>
       </div>
     </section>
 
@@ -201,30 +261,123 @@
       </div>
     </section>
 
-    <section class="scene action-scene" data-chapter="05" aria-labelledby="monday-title">
+    <section class="scene s05-scene s05-intro" data-chapter="05" aria-labelledby="monday-title">
       <div class="scene-inner">
-        <div class="section-head reveal"><p class="scene-number">05 · FROM MONDAY MORNING</p><h2 id="monday-title">월요일 아침,<br>Helen은 무엇부터 해야 하는가?</h2><p>단계를 선택하면 실행 주체·첫마디·확인할 내용이 펼쳐진다.</p></div>
-        <div class="action-layout">
-          <div class="action-timeline" id="action-timeline" role="tablist" aria-label="실행 단계"></div>
-          <article class="action-detail reveal" id="action-detail" role="tabpanel" aria-live="polite"></article>
+        <div class="section-head s05-heading reveal">
+          <p class="scene-number">05 · FROM MONDAY MORNING</p>
+          <h2 id="monday-title">월요일 아침,<br>Mary는 무엇부터 해야 하는가?</h2>
+          <p>조사 결과를 기다리는 HR에서, 사람 속으로 들어가 문제를 진단하고<br>조직의 행동을 끌어내는 HR로.</p>
         </div>
+        <div class="s05-intro-grid">
+          <article class="s05-shift-card reveal" aria-labelledby="s05-shift-title">
+            <span>MARY의 접근 변화</span>
+            <h3 id="s05-shift-title">기다리는 HR에서<br>움직이게 하는 HR로</h3>
+            <div class="s05-shift-row is-before"><b>BEFORE</b><p>문제 징후 발견 <i>→</i> 설문조사 <i>→</i> 추가 정보 대기</p></div>
+            <div class="s05-shift-row is-after"><b>AFTER</b><p>사람을 직접 만남 <i>→</i> 단절 지점 추적 <i>→</i> 조직문제로 연결 <i>→</i> 변화안 제안 <i>→</i> 재확인</p></div>
+          </article>
+          <figure class="s05-visual reveal">
+            <img src="assets/section05/step3_synthesis.png" alt="Mary가 Helen에게 조직 문제의 큰 틀을 설명하는 장면">
+          </figure>
+        </div>
+        <blockquote class="s05-takeaway reveal">“정보가 부족하므로 기다리는 것이 아니라, <strong>정보가 부족하기 때문에 사람 사이로 들어간다.</strong>”</blockquote>
+        <p class="s05-strategic-note reveal"><strong>전략적 HR의 역할</strong>은 모든 문제를 직접 해결하는 것이 아니라, 조직이 문제를 제대로 보고 필요한 사람이 행동하도록 만들고 실제로 변화했는지 확인하는 것이다.</p>
+      </div>
+    </section>
+
+    <section class="scene s05-scene s05-step" data-chapter="05" aria-labelledby="s05-step1-title">
+      <div class="scene-inner">
+        <div class="section-head s05-step-head reveal"><p class="scene-number">05 · MARY'S ACTION · 01</p><h2 id="s05-step1-title">먼저, 문제의 정의부터 바꾼다</h2><p>Mary → Helen</p></div>
+        <div class="s05-split s05-image-first">
+          <figure class="s05-visual reveal"><img src="assets/section05/step1_problem_reframing.png" alt="Mary가 Helen과 핵심인재 이탈 문제를 다시 정의하는 장면"></figure>
+          <article class="s05-message reveal">
+            <span class="s05-kicker">PROBLEM REFRAMING</span>
+            <blockquote>“해결책보다 먼저,<br><strong>무엇이 진짜 문제인지</strong> 다시 정의해야 한다.”</blockquote>
+            <ul class="s05-points">
+              <li>Tom 한 명의 퇴사 문제로만 보지 않는다</li>
+              <li>왜 핵심인재 이탈 신호를 조직이 늦게 알아차렸는지 본다</li>
+              <li>Mary는 약 2주간 직접 진단할 권한을 요청한다</li>
+            </ul>
+          </article>
+        </div>
+        <aside class="s05-takeaway reveal"><span>TAKEAWAY</span><p>첫 번째 변화는 해결책을 서두르는 것이 아니라 <strong>문제를 정확히 정의하는 것</strong>이다.</p></aside>
+      </div>
+    </section>
+
+    <section class="scene s05-scene s05-step" data-chapter="05" aria-labelledby="s05-step2-title">
+      <div class="scene-inner">
+        <div class="section-head s05-step-head reveal"><p class="scene-number">05 · MARY'S ACTION · 02</p><h2 id="s05-step2-title">설문보다 먼저,<br>문제가 실제로 어디에서 끊기는지 확인한다</h2></div>
+        <div class="s05-split s05-text-first">
+          <article class="s05-message reveal">
+            <div class="s05-flow" aria-label="직원 의견 전달 흐름"><b>구성원</b><i>→</i><b>직속관리자</b><i>→</i><b>부서장</b><i>→</i><b>타 부서</b><i>→</i><b>경영진</b></div>
+            <ul class="s05-points s05-points-compact">
+              <li>사람별 불만보다 반복되는 흐름을 본다</li>
+              <li>누가 누구에게 말했고, 그 뒤 무엇이 바뀌었는지 묻는다</li>
+              <li>후속조치가 끊긴 정확한 지점을 확인한다</li>
+            </ul>
+            <div class="s05-diagnostic" aria-label="인물별 진단 질문">
+              <div class="s05-diagnostic-tabs" role="tablist" aria-label="진단 대상">
+                <button type="button" role="tab" aria-selected="true" aria-controls="s05-diagnostic-answer" data-question="팀원의 성과뿐 아니라 상태와 경력목표를 알고 있었는가?">Bob</button>
+                <button type="button" role="tab" aria-selected="false" aria-controls="s05-diagnostic-answer" data-question="문제를 말한 뒤 실제로 어떤 일이 있었는가?" tabindex="-1">Adrienne</button>
+                <button type="button" role="tab" aria-selected="false" aria-controls="s05-diagnostic-answer" data-question="문제를 말해도 안전하다고 느끼는가?" tabindex="-1">Engineering</button>
+                <button type="button" role="tab" aria-selected="false" aria-controls="s05-diagnostic-answer" data-question="부서 간 조율은 실제로 어떻게 이뤄졌는가?" tabindex="-1">Paul</button>
+              </div>
+              <blockquote id="s05-diagnostic-answer" role="tabpanel" aria-live="polite">“팀원의 성과뿐 아니라 상태와 경력목표를 알고 있었는가?”</blockquote>
+            </div>
+            <p class="s05-role-caption"><strong>Mary</strong> 진단 프레임·핵심 인터뷰·교차 확인·패턴 통합 <i>/</i> <strong>Bob과 현업 리더</strong> 팀원 1:1·경력대화·후속조치·상향 전달</p>
+          </article>
+          <figure class="s05-visual reveal"><img src="assets/section05/step2_diagnosis.png" alt="Mary가 Bob과 구성원들의 의견 흐름을 진단하는 장면"></figure>
+        </div>
+        <aside class="s05-takeaway reveal"><span>TAKEAWAY</span><p>누가 불만을 갖고 있는지가 아니라, <strong>의견이 어디에서 행동으로 이어지지 않는지</strong>를 찾는다.</p></aside>
+      </div>
+    </section>
+
+    <section class="scene s05-scene s05-step" data-chapter="05" aria-labelledby="s05-step3-title">
+      <div class="scene-inner">
+        <div class="section-head s05-step-head reveal"><p class="scene-number">05 · MARY'S ACTION · 03</p><h2 id="s05-step3-title">개인의 불만을<br>조직의 문제로 번역한다</h2></div>
+        <div class="s05-split s05-text-first">
+          <article class="s05-message reveal">
+            <blockquote class="s05-report">“특정 직원 한 명의 불만이 아니라, 직원의 의견이 조직의 행동으로 이어지는 과정에서 <strong>반복적인 단절</strong>이 보입니다.”</blockquote>
+            <div class="s05-diagnosis-cards">
+              <div><b>01</b><p>관리자의<br>사람관리 역량 부족</p></div>
+              <div><b>02</b><p>부서 간<br>협업 단절</p></div>
+              <div><b>03</b><p>성장한 인재의<br>불명확한 경력경로</p></div>
+            </div>
+          </article>
+          <figure class="s05-visual s05-visual-crop reveal"><img src="assets/section05/step3_synthesis.png" alt="Mary가 Helen에게 세 가지 조직 문제를 구조적으로 설명하는 장면"></figure>
+        </div>
+        <aside class="s05-takeaway reveal"><span>COMMON THREAD</span><p>세 문제를 관통하는 핵심은 <strong>직원 의견이 실제 조직행동으로 연결되지 않는다는 점</strong>이다.</p></aside>
+      </div>
+    </section>
+
+    <section class="scene s05-scene s05-step" data-chapter="05" aria-labelledby="s05-step4-title">
+      <div class="scene-inner">
+        <div class="section-head s05-step-head reveal"><p class="scene-number">05 · MARY'S ACTION · 04</p><h2 id="s05-step4-title">전사 제도를 한꺼번에 바꾸기보다,<br>90일 동안 세 가지부터 바꾼다</h2></div>
+        <div class="s05-split s05-image-first s05-experiment-layout">
+          <figure class="s05-visual reveal"><img src="assets/section05/step4_90day_experiments.png" alt="Mary와 여러 부서 구성원이 90일 변화 실험을 함께 설계하는 장면"></figure>
+          <div class="s05-action-cards reveal">
+            <article><b>01</b><h3>관리자의 사람관리 행동 개선</h3><p>격주 핵심인재 1:1 · 중요 이슈 후속조치 · 경력대화 · 경청과 조율</p></article>
+            <article><b>02</b><h3>다음 주요 수주 프로젝트에 협업 방식 시범 적용</h3><p>설계·Engineering·영업이 처음부터 참여하고 고객가치를 공동 기준으로 삼는다.</p></article>
+            <article><b>03</b><h3>고성과자의 다음 경력단계 재설계</h3><p>관리자 외 프로젝트 리더·전문가 경로와 역할·권한·영향력을 구체화한다.</p></article>
+          </div>
+        </div>
+        <aside class="s05-takeaway reveal"><span>90-DAY GOAL</span><p>완성된 제도를 만드는 것이 아니라 <strong>가설을 실제 행동으로 검증하는 것</strong>이다.</p></aside>
       </div>
     </section>
 
     <section class="scene collaboration-scene" data-chapter="05" aria-labelledby="collab-title">
       <div class="scene-inner">
-        <div class="section-head reveal"><p class="scene-number">05 · CROSS-FUNCTIONAL REDESIGN</p><h2 id="collab-title">업무를 넘기는 조직에서<br>고객가치를 함께 만드는 조직으로</h2></div>
+        <div class="section-head reveal"><p class="scene-number">90-DAY EXPERIMENT · A</p><h2 id="collab-title">업무를 넘기는 조직에서<br>고객가치를 함께 만드는 조직으로</h2></div>
         <div class="process-compare">
           <article class="process-block before reveal"><span>BEFORE</span><div class="vertical-process"><b>설계</b><i></i><b>Engineering</b><i class="broken"></i><b>영업</b><i></i><b>고객</b></div><p>정보가 순차적으로 넘어가고, 중요한 맥락은 중간에서 끊긴다.</p></article>
-          <article class="process-block after reveal"><span>AFTER · NEXT MAJOR BID</span><div class="collab-map"><strong>고객 요구</strong><i></i><div><b>설계<small>무엇이 혁신적인가?</small></b><b>Engineering<small>구현 가능한가?</small></b><b>영업<small>왜 비용을 지불하는가?</small></b></div><i></i><strong>공동 가치 제안</strong></div><p>첫 고객 미팅부터 세 부서와 프로젝트 관리자가 함께 참여한다.</p></article>
+          <article class="process-block after reveal manual-stage" data-stage="1" aria-hidden="true"><span>AFTER · NEXT MAJOR BID</span><div class="collab-map"><strong>고객 요구</strong><i></i><div><b>설계<small>무엇이 혁신적인가?</small></b><b>Engineering<small>구현 가능한가?</small></b><b>영업<small>왜 비용을 지불하는가?</small></b></div><i></i><strong>공동 가치 제안</strong></div><p>첫 고객 미팅부터 세 부서와 프로젝트 관리자가 함께 참여한다.</p></article>
         </div>
-        <div class="aar-strip reveal"><b>Marko 사후 검토(After Action Review, AAR)</b><span>예상</span><i></i><span>실제</span><i></i><span>차이의 원인</span><i></i><span>다음 변화</span><small>책임자 찾기가 아닌 프로세스 검토</small></div>
+        <div class="aar-strip reveal manual-stage" data-stage="1" aria-hidden="true"><b>Marko 사후 검토(After Action Review, AAR)</b><span>예상</span><i></i><span>실제</span><i></i><span>차이의 원인</span><i></i><span>다음 변화</span><small>책임자 찾기가 아닌 프로세스 검토</small></div>
       </div>
     </section>
 
     <section class="scene career-scene" data-chapter="05" aria-labelledby="career-title">
       <div class="scene-inner">
-        <div class="section-head reveal"><p class="scene-number">05 · CAREER ARCHITECTURE</p><h2 id="career-title">성장한 인재에게<br>세 개의 다음 길을 보여준다</h2><p>직책 이름뿐 아니라 보상·권한·프로젝트 범위·조직 영향력을 함께 설계한다.</p></div>
+        <div class="section-head reveal"><p class="scene-number">90-DAY EXPERIMENT · B</p><h2 id="career-title">성장한 인재에게<br>세 개의 다음 길을 보여준다</h2><p>직책 이름뿐 아니라 보상·권한·프로젝트 범위·조직 영향력을 함께 설계한다.</p></div>
         <div class="career-columns">
           <article class="career-path reveal"><span>경로 1</span><h3>관리직</h3><ol><li>Manager</li><li>Director</li><li>VP</li></ol><p>사람과 조직을 이끄는 경로</p></article>
           <article class="career-path reveal"><span>경로 2</span><h3>프로젝트 리더</h3><ol><li>Project Lead</li><li>Senior Project Lead</li><li>Program Director</li></ol><p>대형 과업과 고객가치를 이끄는 경로</p></article>
@@ -234,15 +387,55 @@
       </div>
     </section>
 
+    <section class="scene s05-scene s05-step" data-chapter="05" aria-labelledby="s05-step5-title">
+      <div class="scene-inner">
+        <div class="section-head s05-step-head reveal"><p class="scene-number">05 · MARY'S ACTION · 05</p><h2 id="s05-step5-title">바뀌었다고 말하지 말고,<br>실제로 바뀌었는지 확인한다</h2></div>
+        <div class="s05-split s05-text-first">
+          <article class="s05-message reveal">
+            <div class="s05-measure-grid">
+              <div><b>01 · 직원 의견</b><p>문제를 제기하면 실제 후속조치가 이루어지는가</p></div>
+              <div><b>02 · 관리자 신뢰</b><p>직속관리자는 나의 성장과 상태를 알고 있는가</p></div>
+              <div><b>03 · 부서 간 협업</b><p>해결되지 않은 갈등이 줄었는가</p></div>
+              <div><b>04 · 경력 명확성</b><p>다음 성장경로를 이해하고 있는가</p></div>
+            </div>
+            <p class="s05-note">성과 측정은 보고용 숫자가 아니라, 변화가 실제로 체감되는지 확인하는 과정이다.</p>
+            <p class="s05-indicator-note">90일 안에는 행동·과정의 선행지표를 확인하고, 수주성과·핵심인재 잔류와 같은 결과지표는 이후 분기까지 추적한다.</p>
+            <p class="s05-bob-note"><strong>Bob:</strong> 개선이 충분하지 않다면 개인–직무 적합성 재검토가 필요할 수 있다.</p>
+          </article>
+          <figure class="s05-visual reveal"><img src="assets/section05/step5_remeasurement.png" alt="Mary가 Helen과 Bob에게 90일 후 측정 결과를 설명하는 장면"></figure>
+        </div>
+        <aside class="s05-takeaway reveal"><span>RE-MEASURE</span><p>변화를 선언하지 않고, <strong>구성원이 실제로 다르게 경험하는지</strong> 확인한다.</p></aside>
+      </div>
+    </section>
+
+    <section class="scene s05-scene s05-step" data-chapter="05" aria-labelledby="s05-step6-title">
+      <div class="scene-inner">
+        <div class="section-head s05-step-head reveal"><p class="scene-number">05 · MARY'S ACTION · 06</p><h2 id="s05-step6-title">효과가 확인된 변화를<br>조직의 표준으로 만든다</h2></div>
+        <div class="s05-split s05-image-first">
+          <figure class="s05-visual reveal"><img src="assets/section05/step6_institutionalize.png" alt="Mary가 전체 팀 앞에서 검증된 변화를 조직 원칙으로 정리하는 장면"></figure>
+          <article class="s05-message reveal">
+            <p class="s05-cycle">실험 <i>→</i> 검증 <i>→</i> <strong>제도화</strong></p>
+            <div class="s05-principles">
+              <div><b>01</b><p>직원 의견 체계</p></div>
+              <div><b>02</b><p>승진 및 인재관리 원칙</p></div>
+              <div><b>03</b><p>핵심인력 의존 위험 관리</p></div>
+              <div><b>04</b><p>선택형 멘토링</p></div>
+            </div>
+          </article>
+        </div>
+        <aside class="s05-takeaway reveal"><span>TAKEAWAY</span><p>확인된 변화를 제도로 남겨야 <strong>좋은 사람에게만 의존하는 조직에서 좋은 시스템을 가진 조직</strong>으로 넘어갈 수 있다.</p></aside>
+      </div>
+    </section>
+
     <section class="scene before-after-scene" id="chapter-06" data-chapter="06" aria-labelledby="before-after-title">
       <div class="scene-inner">
         <div class="section-head reveal"><p class="scene-number">06 · BEFORE / AFTER</p><h2 id="before-after-title">조직은 무엇이 달라지는가?</h2></div>
         <div class="before-after">
           <article class="state before reveal"><span>BEFORE</span><ul><li>좋은 사람과 아이디어는 있음</li><li>문제를 말해도 변화가 잘 보이지 않음</li><li>부서 간 협업이 개인에게 의존</li><li>경력경로가 불명확</li><li>관리자는 성과 중심으로 구성원을 파악</li><li>핵심인재가 떠난 뒤에야 대응</li><li>승진이 인재 유지 수단이 될 위험</li></ul></article>
-          <div class="transformation reveal" aria-hidden="true"><span>&#8594;</span><small>조직체계 재설계</small></div>
-          <article class="state after reveal"><span>AFTER</span><ul><li>직원 의견 → 행동 → 결과 공유</li><li>관리자가 사람관리 리더 역할 수행</li><li>세 부서가 프로젝트 초기부터 참여</li><li>여러 경력경로 제공</li><li>핵심인력 의존 위험 관리</li><li>관리자의 현재 역할 적합성 재평가</li><li>공정한 승진 의사결정</li></ul></article>
+          <div class="transformation reveal manual-stage" data-stage="1" aria-hidden="true"><span>&#8594;</span><small>조직체계 재설계</small></div>
+          <article class="state after reveal manual-stage" data-stage="1" aria-hidden="true"><span>AFTER</span><ul><li>직원 의견 → 행동 → 결과 공유</li><li>관리자가 사람관리 리더 역할 수행</li><li>세 부서가 프로젝트 초기부터 참여</li><li>여러 경력경로 제공</li><li>핵심인력 의존 위험 관리</li><li>관리자의 현재 역할 적합성 재평가</li><li>공정한 승진 의사결정</li></ul></article>
         </div>
-        <blockquote class="before-after-quote reveal">인재를 붙잡는 회사가 아니라,<br><em>인재가 계속 성장하고 싶어지는 회사로.</em></blockquote>
+        <blockquote class="before-after-quote reveal manual-stage" data-stage="1" aria-hidden="true">인재를 붙잡는 회사가 아니라,<br><em>인재가 계속 성장하고 싶어지는 회사로.</em></blockquote>
       </div>
     </section>
 
@@ -256,19 +449,58 @@
           <li class="reveal"><span>04</span><div><h3>리더는 사람의 성과만 아는 사람이 아니다.</h3><p>회사가 왜 그 사람을 필요로 하는지뿐 아니라, 그 사람이 왜 이 회사에 남고 싶은지도 알아야 한다.</p></div></li>
           <li class="reveal"><span>05</span><div><h3>여러 사람의 관점을 연결하면 구조적 원인이 보인다.</h3><p>한 사람의 퇴사로 시작한 사건이 경력·리더십·협업·직원 의견의 문제로 이어졌다.</p></div></li>
         </ol>
-        <blockquote class="closing-thesis reveal">인재 유지는 사람을 붙잡는 기술이 아니라,<br><em>사람이 떠나고 싶어지는 조직적 원인을 줄이는 과정이다.</em></blockquote>
+        <blockquote class="closing-thesis reveal manual-stage" data-stage="1" aria-hidden="true">인재 유지는 사람을 붙잡는 기술이 아니라,<br><em>사람이 떠나고 싶어지는 조직적 원인을 줄이는 과정이다.</em></blockquote>
       </div>
     </section>
 
     <section class="scene ai-scene" id="chapter-08" data-chapter="08" aria-labelledby="ai-title">
       <div class="scene-inner">
-        <div class="section-head reveal"><p class="scene-number">08 · AI USE &amp; CRITICAL REVIEW</p><h2 id="ai-title">생성형 AI 활용 및 비판적 검토</h2><p>GPT-5.6을 독해·브레인스토밍·구조화에 활용하고, 제안을 그대로 수용하지 않았다.</p></div>
-        <div class="ai-grid">
-          <article class="prompt-card reveal"><span>대표 프롬프트</span><blockquote>“Sambian Partners 케이스에서 등장인물 각각의 관점과 감정선을 세밀하게 분석해줘. 원문 사실과 해석을 구분하고, 특정 인물을 악역으로 단정하지 말아줘. 해결방안은 관리자가 실제로 실행할 수 있을 정도로 구체적으로 설계해줘.”</blockquote><div class="usage-tags"><span>사례 독해 보조</span><span>인물 관점 브레인스토밍</span><span>조직행위 개념 연결</span><span>해결방안 구체화</span><span>발표구조 정리</span></div></article>
-          <article class="revision-list reveal"><div><b>AI 초기 제안</b><span>공식 멘토 제도</span><p><strong>비판적 검토</strong> 지정만으로 신뢰관계가 생기지 않으며 형식화·업무부담 가능성이 있다.</p><p><strong>수정</strong> 사람관리 리더십을 먼저 강화하고 멘토링은 선택형으로 운영.</p></div><div><b>AI 초기 방향</b><span>Bob의 리더십 문제로 빠른 결론</span><p><strong>비판적 검토</strong> 개인 역량·업무 과부하·부서 구조·경영진 단계의 문제를 먼저 진단해야 한다.</p><p><strong>수정</strong> 경청 진단 → 맞춤 교육 → 3개월 행동계획 → 재평가.</p></div><div><b>AI 초기 방향</b><span>Tom의 경력경로 중심 분석</span><p><strong>비판적 검토</strong> 승진만으로 설명하면 Marko·직원 의견·내재적 동기·부서 간 협업을 놓친다.</p><p><strong>수정</strong> 경력 + 동기 + 조직체계 + 의견 + 협업을 통합.</p></div></article>
+        <div class="section-head ai-heading reveal"><p class="scene-number">08 · AI USE &amp; CRITICAL REVIEW</p><h2 id="ai-title">생성형 AI 활용 및 비판적 검토</h2><p>“완성된 답을 생성하는 도구보다, 사례를 함께 검토하고 논리를 점검하는 분석 파트너로 활용했다.”</p></div>
+
+        <div class="ai-workspace">
+          <article class="ai-process-panel reveal" aria-labelledby="ai-process-title">
+            <h3 id="ai-process-title">어떻게 활용했는가?</h3>
+            <ol class="ai-process-flow">
+              <li><b>01</b><div><strong>인물별 관점 탐색</strong><p>Tom, Helen, Mary, Adrienne, Bob 등 각 인물의 행동과 감정선을 하나씩 검토했다.</p></div></li>
+              <li><b>02</b><div><strong>사실과 해석 구분</strong><p>사례에 직접 나오지 않은 내용을 확정적으로 해석하면, 사실과 추론을 다시 구분했다.</p></div></li>
+              <li><b>03</b><div><strong>논리적 문제 지적 및 수정</strong><p>인물의 문제가 섞이거나 하나의 원인으로 단순화된 부분을 다시 질문하며 수정했다.</p></div></li>
+              <li><b>04</b><div><strong>실행 가능한 해결방안 구체화</strong><p>누가 · 누구를 · 어떻게 만나고 · 첫마디를 무엇이라 하며 · 이후 무엇을 확인할지까지 설계했다.</p></div></li>
+            </ol>
+            <p class="ai-process-note">AI의 첫 답변을 최종 답으로 사용하지 않고, 질문–검토–수정 과정을 반복했다.</p>
+          </article>
+
+          <section class="ai-cases-panel reveal" aria-labelledby="ai-cases-title">
+            <div class="ai-cases-head"><h3 id="ai-cases-title">실제 대화에서 수정된 사례</h3><div class="ai-case-tabs" role="tablist" aria-label="수정 사례 선택"><button type="button" role="tab" aria-selected="true" aria-controls="ai-case-1" id="ai-case-tab-1">01 인물 논리</button><button type="button" role="tab" aria-selected="false" aria-controls="ai-case-2" id="ai-case-tab-2" tabindex="-1">02 구조 삭제</button><button type="button" role="tab" aria-selected="false" aria-controls="ai-case-3" id="ai-case-tab-3" tabindex="-1">03 현실성</button></div></div>
+
+            <article class="ai-case-card" id="ai-case-1" role="tabpanel" aria-labelledby="ai-case-tab-1">
+              <blockquote><span>실제 피드백</span>“Tom 질문에 왜 Adrienne 내용이 들어간 것 같지?”</blockquote>
+              <p>Tom의 퇴사 원인에 Adrienne의 멘토·직원 의견 문제가 섞이자 인물별 논리를 다시 분리했다.</p>
+              <div class="ai-case-result split"><div><b>수정 결과 · Tom</b><p>Marko 경험 → 내재적 동기 → 조직체계의 한계 → 개인–조직 적합성 변화 → 불명확한 성장경로</p></div><div><b>수정 결과 · Adrienne</b><p>직원 의견제시 실패 → 비공식적 멘토 상실 → Bob과의 리더십 관계 → 방향성 상실</p></div></div>
+              <strong class="ai-case-takeaway">같은 조직문제라도 각 인물이 경험한 방식은 구분해서 분석했다.</strong>
+            </article>
+
+            <article class="ai-case-card" id="ai-case-2" role="tabpanel" aria-labelledby="ai-case-tab-2" hidden>
+              <blockquote><span>실제 피드백</span>“SECTION 5는 이미 문제 분석은 된 것 같은데 억지로 흐름을 늘리는 감이 있어. 그냥 빼도 되지 않을까?”</blockquote>
+              <p>AI가 해결방안 전에 A/B/C/D 대안을 다시 비교했지만, 앞선 분석에서 원인이 충분히 도출되어 있어 중복으로 판단했다.</p>
+              <div class="ai-case-result"><b>수정 결과</b><div class="ai-flow-line"><span>문제 분석</span><i></i><span>인물별 관점</span><i></i><span>하나의 조직문제로 통합</span><i></i><span>바로 실행방안</span></div></div>
+              <strong class="ai-case-takeaway">AI가 만든 구조라도 발표 흐름에 필요하지 않으면 삭제했다.</strong>
+            </article>
+
+            <article class="ai-case-card" id="ai-case-3" role="tabpanel" aria-labelledby="ai-case-tab-3" hidden>
+              <blockquote><span>실제 요청</span>“어떻게 만나자고 할 건지, 첫 마디를 어떻게 할지 구체적일수록 좋은 솔루션으로 짜고 싶다.”</blockquote>
+              <p><span class="ai-initial-label">AI 초기 방향</span> 리더십 교육 · 직원 설문 · 부서 간 협업 강화 같은 일반적 해결책</p>
+              <div class="ai-case-result speech-examples"><div><b>수정 결과 · Helen → Mary</b><p>“누굴 붙잡을지보다, 왜 사람들의 생각을 늦게 알아차리는지부터 봅시다.”</p></div><div><b>수정 결과 · Mary → Bob</b><p>“개인의 잘잘못보다 팀의 목소리가 어디에서 막히는지 확인하려는 대화입니다.”</p></div></div>
+              <strong class="ai-case-takeaway">기준을 ‘좋은 아이디어인가?’에서 ‘실제로 실행할 수 있는가?’로 바꾸었다.</strong>
+            </article>
+          </section>
         </div>
-        <div class="comparison-block reveal"><span>OTHER AI COMPARISON · 발표자가 직접 입력</span><label>GPT-5.6<textarea aria-label="GPT-5.6 비교 결과" placeholder="____"></textarea></label><label>Gemini<textarea aria-label="Gemini 비교 결과" placeholder="____"></textarea></label><label>Claude<textarea aria-label="Claude 비교 결과" placeholder="____"></textarea></label><label>비교 결과<textarea aria-label="종합 비교 결과" placeholder="____"></textarea></label></div>
-        <footer class="final-footer reveal"><strong>Sambian Partners</strong><span>좋은 가치가 실제 조직행동으로 이어지게 하려면 무엇이 필요한가?</span><small>Case Analysis · 조직행위이해</small></footer>
+
+        <section class="ai-judgment reveal" aria-labelledby="ai-judgment-title">
+          <h3 id="ai-judgment-title">AI의 역할과 최종 판단</h3>
+          <div class="ai-judgment-grid"><div><b>AI가 도움을 준 부분</b><p>사례 독해 보조 · 인물 관점 브레인스토밍 · 조직행위 개념 연결 · 해결방안 아이디어 · 발표구조 시각화</p></div><div><b>그대로 따르지 않은 부분</b><p>Tom 문제의 단순화 · Bob에 대한 빠른 결론 · 공식 mentor 강제배정 · 불필요한 비교 section · 인물 분석 혼합</p></div><div><b>최종 판단 기준</b><p>원문 근거 · 사실과 추론 구분 · 인물별 관점 구분 · 조직행위 개념과의 연결 · 실제 실행 가능성</p></div></div>
+        </section>
+        <p class="ai-crosscheck-note reveal"><span>CROSS-CHECK</span>Gemini 3.1 Pro를 활용하여 상호 피드백을 확인했다.</p>
+        <div class="ai-final-row reveal manual-stage" data-stage="1" aria-hidden="true"><blockquote>AI는 분석을 대신한 것이 아니라, <em>반론을 만들고 생각을 구체화하는 도구</em>로 활용했다.</blockquote><small>주요 분석은 GPT-5.6을 중심으로 수행했다.</small></div>
       </div>
     </section>
   </main>

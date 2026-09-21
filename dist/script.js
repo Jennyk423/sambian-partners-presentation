@@ -1,6 +1,6 @@
 const characters = [
   {
-    id: "tom", name: "Tom Forsythe", role: "핵심 설계인력 / 고성과자", image: "assets/tom.png",
+    id: "tom", name: "Tom Forsythe", role: "핵심 설계인력 / 고성과자", image: "assets/tom.png", definition: "성장한 고성과자와 조직의 적합성 변화",
     tags: ["성취", "내재적 동기", "개인–조직 적합성 변화", "정서적 이탈"],
     speech: "이 회사가 많은 기회를 준 건 맞아. 그런데 이제 더 성장하려면 여기에서 다음 단계가 어디인지 잘 보이지 않아.",
     emotions: ["조직에 대한 애착", "성과와 인정", "Marko의 한계 체감", "성장경로 의문", "기대 약화", "정서적 이탈"],
@@ -9,7 +9,7 @@ const characters = [
     takeaway: "Tom은 혁신과 자율성 자체보다, 그 가치를 실제 성과와 자신의 다음 성장단계로 연결하는 조직체계에 한계를 느꼈을 가능성이 있다."
   },
   {
-    id: "helen", name: "Helen Gasbarian", role: "CEO / Architect", image: "assets/helen.png",
+    id: "helen", name: "Helen Gasbarian", role: "CEO / Architect", image: "assets/helen.png", definition: "내부 원인보다 인재 유지에 먼저 반응한 경영진",
     tags: ["자부심", "상호성 기대", "상실회피", "방어적 대응"],
     speech: "우리는 사람들이 아직 신입일 때부터 큰 프로젝트와 기회를 줬어. 그런데 왜 이제 와서 다른 회사로 떠나는 거지?",
     emotions: ["창업철학에 대한 자부심", "이탈에 당혹", "경쟁사 원인 해석", "상실 불안", "즉흥 유지 행동", "원인 탐색 약화"],
@@ -18,7 +18,7 @@ const characters = [
     takeaway: "무관심이 아니라, 문제 정의가 ‘왜 떠나는가?’에서 ‘어떻게 빼앗기지 않을까?’로 이동한 것이 핵심이다."
   },
   {
-    id: "mary", name: "Mary Donillo", role: "인사책임자", image: "assets/mary.png",
+    id: "mary", name: "Mary Donillo", role: "인사책임자", image: "assets/mary.png", definition: "문제를 읽었지만 행동으로 전환하지 못한 HR",
     tags: ["원칙주의", "조심성", "데이터 의존", "불확실성 회피"],
     speech: "문제가 있다는 건 알겠어. 그런데 정확한 근거 없이 먼저 움직여도 되는 걸까?",
     emotions: ["이상징후 감지", "원인 확신 부족", "추가 조사 요구", "행동 유보", "공정성 우려", "주도력 부족"],
@@ -27,7 +27,7 @@ const characters = [
     takeaway: "문제를 읽는 능력은 있지만, 그 판단을 전략적인 인사 행동으로 전환하는 힘은 약했다."
   },
   {
-    id: "adrienne", name: "Adrienne Perle", role: "Engineering 핵심인재", image: "assets/adrienne.png",
+    id: "adrienne", name: "Adrienne Perle", role: "Engineering 핵심인재", image: "assets/adrienne.png", definition: "말해도 달라지지 않는 조직을 경험한 핵심인재",
     tags: ["답답함", "직원 의견제시", "무력감", "방향 상실"],
     speech: "문제가 있다는 건 알고 있어. 이미 말해봤어. 그런데 달라지는 건 없고, 혼자 해결할 수도 없어.",
     emotions: ["조직문제 인식", "의견 제시", "반응 없음", "답답함", "Tom의 상실", "경력 방향성 혼란"],
@@ -36,7 +36,7 @@ const characters = [
     takeaway: "Adrienne에게 필요한 것은 승진 하나가 아니라 ‘문제를 말하면 조직이 실제로 움직인다’는 경험이었다."
   },
   {
-    id: "bob", name: "Bob Wortham", role: "VP of Engineering", image: "assets/bob.png",
+    id: "bob", name: "Bob Wortham", role: "VP of Engineering", image: "assets/bob.png", definition: "성과는 알았지만 구성원의 상태는 놓친 관리자",
     tags: ["성과 인지", "사람관리 리더십 가설", "사후 대응"],
     speech: "Adrienne이 얼마나 중요한 사람인지는 알아. 그런데 왜 떠나려 할 수 있는지는 제대로 알고 있었나?",
     emotions: ["높은 성과 평가", "이탈 가능성에 위기감", "원인 이해 부족", "CEO에게 도움 요청"],
@@ -45,7 +45,7 @@ const characters = [
     takeaway: "악의보다 경청 → 후속조치 → 팀의 의견 대변으로 이어지는 사람관리 리더십이 부족했을 가능성이 있다."
   },
   {
-    id: "savannah", name: "Savannah Dorsey", role: "동료 / 관찰자", image: "assets/savannah.png",
+    id: "savannah", name: "Savannah Dorsey", role: "동료 / 관찰자", image: "assets/savannah.png", definition: "공식 지표보다 먼저 변화를 감지한 동료",
     tags: ["공감", "관찰", "Marko 전환점"],
     speech: "Tom은 프로젝트 하나를 놓쳐서만 낙담한 것 같지는 않아. Marko를 겪으면서 이 회사의 한계를 본 것 같아.",
     emotions: ["높은 몰입 관찰", "Marko 이후 변화 감지", "전문가로서의 실망 이해", "인간적 걱정"],
@@ -54,7 +54,7 @@ const characters = [
     takeaway: "조직은 공식 퇴사 신호보다 훨씬 앞서 나타나는 동료의 관찰과 몰입 변화를 놓쳤다."
   },
   {
-    id: "hal", name: "Hal Pope", role: "동료 / 조직구조 관찰자", image: "assets/hal.png",
+    id: "hal", name: "Hal Pope", role: "동료 / 조직구조 관찰자", image: "assets/hal.png", definition: "개인의 노력보다 경력 병목을 본 관찰자",
     tags: ["현실감각", "경력 병목", "상위직급 정체"],
     speech: "Tom이 더 열심히 해야 하는 문제가 아니야. 이미 충분히 잘하고 있어. 그런데 다음 단계는 어디지?",
     emotions: ["Tom의 성과 인식", "상위 조직 병목 인식", "노력–보상 연결 회의", "경력체계 냉소"],
@@ -63,7 +63,7 @@ const characters = [
     takeaway: "인재 이탈의 원인을 개인의 욕심보다 조직 상층부의 경력 병목에서 본다."
   },
   {
-    id: "paul", name: "Paul Bonney", role: "Architecture Sales", image: "assets/paul.png",
+    id: "paul", name: "Paul Bonney", role: "Architecture Sales", image: "assets/paul.png", definition: "설계와 고객가치 사이의 협업 단절을 보여준 인물",
     tags: ["영업 관점", "수주 압박", "부서 간 협업 부족"],
     speech: "설계부문과 영업부문이 ‘좋은 프로젝트’를 바라보는 기준부터 다르다면, 마지막 발표만 잘한다고 해결될까?",
     emotions: ["수주 책임", "서로 다른 성공기준", "상호 오해", "부서 간 거리 증가"],
@@ -71,22 +71,6 @@ const characters = [
     analysis: "Paul을 Marko 실패의 단독 원인이나 무능한 영업책임자로 볼 수 없다. 두 관점을 프로젝트 초기에 연결하는 구조가 약했고, Paul은 그 협업 실패가 가장 선명하게 드러나는 위치에 있었다.",
     takeaway: "마지막 발표능력보다, 고객가치와 설계가치를 초기에 공동 정의하는 조직체계가 필요했다."
   }
-];
-
-const actions = [
-  { timing: "DAY 1", title: "Helen → Mary", purpose: "문제 정의부터 다시 설정", first: "Mary, 이번에는 누굴 어떻게 붙잡을지보다 왜 우리가 사람들의 생각을 이렇게 늦게 알아차리는지부터 같이 봅시다.", focus: ["직원들이 충분히 말하지 않는 이유", "성장한 직원에게 다음 경력단계가 보이는지", "부서 사이 정보가 어디서 끊기는지"], output: "2주 진단과제. 결론은 미리 정하지 않는다." },
-  { timing: "DAY 2–5", title: "Mary → Bob", purpose: "리더십 경청 진단", first: "개인의 잘잘못을 판단하려는 자리가 아니라, 팀의 목소리가 어디에서 막히는지 확인하려는 대화입니다.", focus: ["최근 3개월 1:1 빈도", "Adrienne의 2년 경력목표", "Engineering의 영업 관련 문제", "전달 이후 후속조치"], output: "경청 · 후속조치 · 팀 의견 대변의 세 축으로 진단." },
-  { timing: "WEEK 1", title: "Engineering 소그룹", purpose: "관리자 없이 반복 패턴 확인", first: "특정 관리자를 평가하는 자리가 아닙니다. 일을 잘하려 할 때 조직의 어디에서 막히는지 알고 싶습니다.", focus: ["제기했지만 해결되지 않은 문제", "누구에게 말했고 이후 무슨 일이 있었는지", "다른 부서와 충돌할 때 누가 대변하는지", "부정적 이야기를 해도 안전한지"], output: "개인 이름이 아닌 익명의 반복 패턴으로 정리." },
-  { timing: "WEEK 1", title: "중립 진행자 → Adrienne", purpose: "잔류 설득이 아닌 경험 이해", first: "오늘은 떠날지 여부를 확인하려는 자리가 아니에요. 어떤 부분이 가장 잘 작동하지 않는지를 듣고 싶습니다.", focus: ["길을 잃은 느낌의 구체적 의미", "Tom과 함께 있을 때 받았던 지원과 연결", "윗선에 말한 내용과 이후 반응"], output: "회사 입장 변명·즉각 승진 제안 없이 경청하고 반복 문제 기록." },
-  { timing: "WEEK 2", title: "직원 의견 흐름 진단", purpose: "문제가 끊기는 정확한 지점 확인", first: "구성원 → 직속관리자 → 부서장 → 타 부서 → 경영진의 흐름을 실제 사례로 추적합니다.", focus: ["A: 경청 자체의 문제", "B: 후속조치의 문제", "C: 부서 간 리더십 문제", "D: 경영체계 문제"], output: "Bob의 리더십 부족이 1차 가설이지만 진단 전에는 확정하지 않는다." },
-  { timing: "MONTH 1–3", title: "Bob 리더십 개선", purpose: "진단에 맞춘 행동 변화", first: "팀은 업무 성과는 잘 안다고 느끼지만, 문제를 말한 뒤 어떤 조치가 이루어지는지는 잘 보이지 않는다고 느끼고 있습니다.", focus: ["격주 핵심인재 1:1", "매월 팀 경청 세션", "Paul과 월간 협업회의", "중요 이슈 2주 내 진행상황 공유", "분기 경력대화"], output: "일반 강의가 아니라 적극적 경청·갈등조정·부서 간 영향력·후속조치 중심." },
-  { timing: "MONTH 1", title: "Marko 사후 검토", purpose: "개인이 아닌 프로세스 검토", first: "책임자를 찾는 회의가 아닙니다. 좋은 설계가 왜 고객가치와 수주로 연결되지 못했는지 확인하겠습니다.", focus: ["무엇을 예상했는가", "실제로 무엇이 일어났는가", "왜 차이가 발생했는가", "다음 프로젝트에서 바꿀 것은 무엇인가"], output: "개인의 성과평가와 사후 검토를 분리." },
-  { timing: "NEXT MAJOR BID", title: "부서 간 협업팀 시범", purpose: "첫 고객 미팅부터 공동 가치 제안", first: "설계·Engineering·영업·프로젝트 관리가 고객가치를 같은 언어로 정의합니다.", focus: ["설계: 무엇이 혁신적인가", "Engineering: 실제 구현 가능한가", "영업: 고객은 왜 비용을 지불하는가", "프로젝트 관리: 비용·일정·위험을 감당할 수 있는가"], output: "순차 전달에서 초기 공동 설계로 전환." },
-  { timing: "MONTH 2–4", title: "경력경로 재설계", purpose: "고성과자의 다음 목적지 설계", first: "관리자가 되는 것 외에 어떤 역할이 있다면 계속 성장한다고 느낄 수 있나요?", focus: ["관리직 경로", "프로젝트 리더 경로", "전문가 경로", "보상·권한·프로젝트 범위·외부 대표성"], output: "인사부서 단독 설계가 아니라 고성과자 심층면담에서 출발." },
-  { timing: "MONTH 2–4", title: "승계·의존 위험 관리", purpose: "한 사람에게 집중된 역할 분산", first: "Tom을 대신할 또 다른 Tom 한 명을 찾는 것이 목표가 아닙니다.", focus: ["설계 전문성", "프로젝트 리더십", "고객관계", "비공식 멘토링", "조직 내부 영향력"], output: "핵심직무에만 승계계획을 적용하고 멘토링은 선택형으로 운영." },
-  { timing: "QUARTERLY", title: "직원 의견제시 체계", purpose: "구성원이 말한 것 → 회사가 바꾼 것", first: "짧은 정기 설문과 익명 자유응답을 실제 조치와 결과 공유로 연결합니다.", focus: ["2년 경력경로 이해", "문제 제기 후 실제 조치", "관리자의 성장 관심", "부서 간 목적 이해", "2년 잔류 의향"], output: "의견제시 → 조치 → 결과 공유 → 신뢰의 폐쇄 고리 구축." },
-  { timing: "MONTH 3", title: "Bob 재평가", purpose: "같은 지표로 역할 적합성 재확인", first: "처음 합의한 행동목표를 바탕으로 개선기회를 제공했습니다. VP 역할과 현재 강점의 적합성을 다시 논의하겠습니다.", focus: ["직원 의견이 행동으로 연결된다는 인식", "후속조치 비율", "팀 신뢰", "미해결 부서 갈등", "경력대화 실시 여부"], output: "개선 시 유지·코칭. 미개선 시 Principal Engineer 등 개인–직무 적합성 재검토." },
-  { timing: "ONGOING", title: "승진 의사결정 체계", purpose: "불안과 승진 기준을 분리", first: "떠날 것 같다는 이유만으로 승진하지 않습니다. 동일한 기준과 여러 관점으로 판단합니다.", focus: ["성과", "역량", "리더십 잠재력", "준비도", "조직 필요성"], output: "Helen·Mary·해당 부서장·타 부서 senior leader가 참여하는 인재검토위원회 운영." }
 ];
 
 const presentation = document.querySelector("#presentation");
@@ -105,11 +89,70 @@ function scrollToScene(index) {
   scenes[safeIndex].scrollIntoView({ behavior: "smooth", block: "start" });
 }
 
+function manualStageGroups(scene) {
+  const elements = [...scene.querySelectorAll(".manual-stage")];
+  const stages = [...new Set(elements.map((element) => Number(element.dataset.stage) || 1))].sort((a, b) => a - b);
+  return stages.map((stage) => elements.filter((element) => (Number(element.dataset.stage) || 1) === stage));
+}
+
+function setManualGroupVisible(group, visible) {
+  group.forEach((element, index) => {
+    element.style.setProperty("--stage-delay", `${visible ? index * 65 : 0}ms`);
+    element.classList.toggle("is-visible", visible);
+    element.setAttribute("aria-hidden", visible ? "false" : "true");
+  });
+}
+
+function resetManualStages(scene) {
+  manualStageGroups(scene).forEach((group) => setManualGroupVisible(group, false));
+}
+
+function revealNextManualStage(scene) {
+  const nextGroup = manualStageGroups(scene).find((group) => group.some((element) => !element.classList.contains("is-visible")));
+  if (!nextGroup) return false;
+  setManualGroupVisible(nextGroup, true);
+  return true;
+}
+
+function hideLastManualStage(scene) {
+  const visibleGroups = manualStageGroups(scene).filter((group) => group.some((element) => element.classList.contains("is-visible")));
+  const lastGroup = visibleGroups.at(-1);
+  if (!lastGroup) return false;
+  setManualGroupVisible(lastGroup, false);
+  return true;
+}
+
+function resetAutoReveals(scene) {
+  scene.querySelectorAll(".reveal").forEach((element) => {
+    element.classList.remove("is-visible");
+    element.style.removeProperty("transition-delay");
+  });
+}
+
+function playAutoReveals(scene) {
+  const elements = [...scene.querySelectorAll(".reveal:not(.manual-stage)")];
+  elements.forEach((element) => element.classList.remove("is-visible"));
+  requestAnimationFrame(() => {
+    elements.forEach((element, index) => {
+      element.style.transitionDelay = `${Math.min(index * 55, 330)}ms`;
+      element.classList.add("is-visible");
+    });
+  });
+}
+
 function updatePresentationState(index) {
+  const previousScene = currentScene;
   currentScene = index;
+  if (previousScene !== index) {
+    scenes[previousScene]?.classList.remove("is-current");
+    resetAutoReveals(scenes[previousScene]);
+    resetManualStages(scenes[previousScene]);
+    scenes[index].classList.add("is-current");
+    playAutoReveals(scenes[index]);
+  }
   const chapter = scenes[index].dataset.chapter;
-  sceneCount.textContent = `${String(index + 1).padStart(2, "0")} / ${String(scenes.length).padStart(2, "0")}`;
-  progressBar.style.width = `${((index + 1) / scenes.length) * 100}%`;
+  if (sceneCount) sceneCount.textContent = `${String(index + 1).padStart(2, "0")} / ${String(scenes.length).padStart(2, "0")}`;
+  if (progressBar) progressBar.style.width = `${((index + 1) / scenes.length) * 100}%`;
   chapterLinks.forEach((link) => link.classList.toggle("is-active", link.querySelector("b").textContent === chapter));
 }
 
@@ -117,8 +160,8 @@ chapterLinks.forEach((link) => {
   link.addEventListener("click", () => document.querySelector(`#${link.dataset.target}`).scrollIntoView({ behavior: "smooth" }));
 });
 
-document.querySelector("#prev-slide").addEventListener("click", () => scrollToScene(currentScene - 1));
-document.querySelector("#next-slide").addEventListener("click", () => scrollToScene(currentScene + 1));
+document.querySelector("#prev-slide")?.addEventListener("click", () => scrollToScene(currentScene - 1));
+document.querySelector("#next-slide")?.addEventListener("click", () => scrollToScene(currentScene + 1));
 document.querySelector("[data-scroll-next]").addEventListener("click", () => scrollToScene(1));
 document.querySelector("#fullscreen").addEventListener("click", async () => {
   try {
@@ -134,10 +177,12 @@ document.addEventListener("keydown", (event) => {
   if (tag === "TEXTAREA" || tag === "INPUT") return;
   if (["ArrowDown", "ArrowRight", "PageDown", " "].includes(event.key)) {
     event.preventDefault();
+    if (revealNextManualStage(scenes[currentScene])) return;
     scrollToScene(currentScene + 1);
   }
   if (["ArrowUp", "ArrowLeft", "PageUp"].includes(event.key)) {
     event.preventDefault();
+    if (hideLastManualStage(scenes[currentScene])) return;
     scrollToScene(currentScene - 1);
   }
   if (event.key === "Home") scrollToScene(0);
@@ -150,21 +195,9 @@ const sceneObserver = new IntersectionObserver((entries) => {
 }, { threshold: [0.35, 0.55, 0.7] });
 scenes.forEach((scene) => sceneObserver.observe(scene));
 
-const revealObserver = new IntersectionObserver((entries, observer) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      const siblings = [...entry.target.parentElement.querySelectorAll(":scope > .reveal")];
-      const order = Math.max(0, siblings.indexOf(entry.target));
-      entry.target.style.transitionDelay = `${Math.min(order * 70, 280)}ms`;
-      entry.target.classList.add("is-visible");
-      observer.unobserve(entry.target);
-    }
-  });
-}, { threshold: 0.12 });
-document.querySelectorAll(".reveal").forEach((item) => revealObserver.observe(item));
-
 const tabs = document.querySelector(".character-tabs");
 const panel = document.querySelector("#character-panel");
+let characterTransitionToken = 0;
 
 function renderCharacter(index, shouldFocus = false) {
   const person = characters[index];
@@ -172,13 +205,14 @@ function renderCharacter(index, shouldFocus = false) {
     tab.setAttribute("aria-selected", tabIndex === index ? "true" : "false");
     tab.tabIndex = tabIndex === index ? 0 : -1;
   });
-  panel.innerHTML = `
+  const updatePanel = () => {
+    panel.innerHTML = `
     <div class="character-portrait">
       <img src="${person.image}" alt="${escapeHtml(person.name)} 캐릭터">
       <div class="character-role"><strong>${escapeHtml(person.name)}</strong><small>${escapeHtml(person.role)}</small></div>
     </div>
     <div class="character-content">
-      <div class="character-heading"><h3>${escapeHtml(person.name)}</h3><div class="character-tags">${person.tags.map((tag) => `<span>${escapeHtml(tag)}</span>`).join("")}</div></div>
+      <div class="character-heading"><div><h3>${escapeHtml(person.name)}</h3><p class="character-definition">${escapeHtml(person.definition)}</p></div><div class="character-tags">${person.tags.map((tag) => `<span>${escapeHtml(tag)}</span>`).join("")}</div></div>
       <blockquote class="speech-card"><span>[해석에 기반한 속마음]</span><p>“${escapeHtml(person.speech)}”</p></blockquote>
       <div class="emotion-line" aria-label="감정선">${person.emotions.map((emotion) => `<span class="emotion-step">${escapeHtml(emotion)}</span>`).join("")}</div>
       <div class="character-evidence">
@@ -187,7 +221,21 @@ function renderCharacter(index, shouldFocus = false) {
       </div>
       <p class="character-takeaway"><strong>TAKEAWAY</strong> · ${escapeHtml(person.takeaway)}</p>
     </div>`;
-  if (shouldFocus) tabs.children[index].focus();
+    panel.classList.remove("is-switching-out");
+    panel.classList.add("is-switching-in");
+    window.setTimeout(() => panel.classList.remove("is-switching-in"), 420);
+    if (shouldFocus) tabs.children[index].focus();
+  };
+
+  const token = ++characterTransitionToken;
+  if (!panel.hasChildNodes() || window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    updatePanel();
+    return;
+  }
+  panel.classList.add("is-switching-out");
+  window.setTimeout(() => {
+    if (token === characterTransitionToken) updatePanel();
+  }, 120);
 }
 
 characters.forEach((person, index) => {
@@ -210,45 +258,81 @@ characters.forEach((person, index) => {
 });
 renderCharacter(0);
 
-const actionTimeline = document.querySelector("#action-timeline");
-const actionDetail = document.querySelector("#action-detail");
+const diagnosticTabs = [...document.querySelectorAll(".s05-diagnostic-tabs [role='tab']")];
+const diagnosticAnswer = document.querySelector("#s05-diagnostic-answer");
 
-function renderAction(index, shouldFocus = false) {
-  const action = actions[index];
-  [...actionTimeline.children].forEach((button, buttonIndex) => {
-    button.setAttribute("aria-selected", buttonIndex === index ? "true" : "false");
-    button.tabIndex = buttonIndex === index ? 0 : -1;
+function selectDiagnosticQuestion(index, shouldFocus = false) {
+  diagnosticTabs.forEach((tab, tabIndex) => {
+    const selected = tabIndex === index;
+    tab.setAttribute("aria-selected", selected ? "true" : "false");
+    tab.tabIndex = selected ? 0 : -1;
   });
-  actionDetail.innerHTML = `
-    <span class="timing">STEP ${String(index + 1).padStart(2, "0")} · ${escapeHtml(action.timing)}</span>
-    <h3>${escapeHtml(action.title)}</h3>
-    <p class="action-purpose">${escapeHtml(action.purpose)}</p>
-    <blockquote class="first-words"><span>FIRST WORDS</span><p>“${escapeHtml(action.first)}”</p></blockquote>
-    <div class="action-body">
-      <div><b>확인할 내용</b><ul>${action.focus.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul></div>
-      <div><b>실행 결과</b><p>${escapeHtml(action.output)}</p></div>
-    </div>`;
-  if (shouldFocus) actionTimeline.children[index].focus();
+  if (diagnosticAnswer) diagnosticAnswer.textContent = `“${diagnosticTabs[index].dataset.question}”`;
+  if (shouldFocus) diagnosticTabs[index].focus();
 }
 
-actions.forEach((action, index) => {
-  const button = document.createElement("button");
-  button.type = "button";
-  button.className = "action-step";
-  button.setAttribute("role", "tab");
-  button.setAttribute("aria-controls", "action-detail");
-  button.innerHTML = `<b>STEP ${String(index + 1).padStart(2, "0")}</b><span>${escapeHtml(action.title)}</span><small>${escapeHtml(action.timing)}</small>`;
-  button.addEventListener("click", () => renderAction(index));
-  button.addEventListener("keydown", (event) => {
-    if (!["ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight"].includes(event.key)) return;
+diagnosticTabs.forEach((tab, index) => {
+  tab.addEventListener("click", () => selectDiagnosticQuestion(index));
+  tab.addEventListener("keydown", (event) => {
+    if (!["ArrowLeft", "ArrowRight"].includes(event.key)) return;
     event.stopPropagation();
     event.preventDefault();
-    const forward = ["ArrowDown", "ArrowRight"].includes(event.key);
-    const nextIndex = forward ? (index + 1) % actions.length : (index - 1 + actions.length) % actions.length;
-    renderAction(nextIndex, true);
+    const forward = event.key === "ArrowRight";
+    const nextIndex = forward ? (index + 1) % diagnosticTabs.length : (index - 1 + diagnosticTabs.length) % diagnosticTabs.length;
+    selectDiagnosticQuestion(nextIndex, true);
   });
-  actionTimeline.append(button);
 });
-renderAction(0);
 
-window.addEventListener("load", () => updatePresentationState(0));
+const aiCaseTabs = [...document.querySelectorAll(".ai-case-tabs [role='tab']")];
+const aiCasePanels = [...document.querySelectorAll(".ai-case-card[role='tabpanel']")];
+const aiCasesPanel = document.querySelector(".ai-cases-panel");
+let aiTransitionToken = 0;
+
+function selectAiCase(index, shouldFocus = false) {
+  aiCaseTabs.forEach((tab, tabIndex) => {
+    const selected = tabIndex === index;
+    tab.setAttribute("aria-selected", selected ? "true" : "false");
+    tab.tabIndex = selected ? 0 : -1;
+  });
+  const updatePanel = () => {
+    aiCasePanels.forEach((casePanel, panelIndex) => {
+      casePanel.hidden = panelIndex !== index;
+      casePanel.classList.toggle("is-entering", panelIndex === index);
+    });
+    aiCasesPanel?.classList.remove("is-switching-out");
+    window.setTimeout(() => aiCasePanels[index].classList.remove("is-entering"), 360);
+    if (shouldFocus) aiCaseTabs[index].focus();
+  };
+
+  const token = ++aiTransitionToken;
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    updatePanel();
+    return;
+  }
+  aiCasesPanel?.classList.add("is-switching-out");
+  window.setTimeout(() => {
+    if (token === aiTransitionToken) updatePanel();
+  }, 100);
+}
+
+aiCaseTabs.forEach((tab, index) => {
+  tab.addEventListener("click", () => selectAiCase(index));
+  tab.addEventListener("keydown", (event) => {
+    if (!["ArrowLeft", "ArrowRight"].includes(event.key)) return;
+    event.stopPropagation();
+    event.preventDefault();
+    const nextIndex = event.key === "ArrowRight" ? (index + 1) % aiCaseTabs.length : (index - 1 + aiCaseTabs.length) % aiCaseTabs.length;
+    selectAiCase(nextIndex, true);
+  });
+});
+
+scenes.forEach((scene) => {
+  resetAutoReveals(scene);
+  resetManualStages(scene);
+});
+scenes[0]?.classList.add("is-current");
+
+window.addEventListener("load", () => {
+  updatePresentationState(0);
+  playAutoReveals(scenes[0]);
+});
